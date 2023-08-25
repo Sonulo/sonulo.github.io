@@ -1,0 +1,30 @@
+{
+    "name": "orianx",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "sass": "sass --watch public/assets/css/scss/elements/theme-css.scss:public/assets/css/scss/elements/theme-css.css"
+    },
+    "dependencies": {
+        "eslint": "8.36.0",
+        "eslint-config-next": "13.2.4",
+        "isotope-layout": "^3.0.6",
+        "next": "13.2.4",
+        "react": "18.2.0",
+        "react-countup": "^6.4.2",
+        "react-dom": "18.2.0",
+        "react-modal-video": "^2.0.0",
+        "react-scroll-trigger": "^0.6.14",
+        "react-slick": "^0.29.0",
+        "sass": "^1.62.1",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^9.2.4"
+    },
+    "resolutions": {
+      "react-countup/countup.js": "2.5.0"
+    }
+}

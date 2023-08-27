@@ -41,13 +41,13 @@ export default function Home1() {
                 <Newsteller1 />
                 <FloatingMenu handleFloating={handleFloating} isFloating={isFloating} />
             </Layout> */}
-            <section className="coming-soon bg_op_1" style={{ background: 'url(/assets/images/coming-soon-bg.jpg)' }}>
+            <section className="coming-soon bg_op_1" style={{ background: 'url(/assets/images/coming-soon-bg.jpg)', height: '100vh' }}>
                 <div className="container">
                     <div className="row">
                         <div className="counter_section">
                             <div className="upper_section">
                                 <div className="logo_sec" style={{padding: 0, margin: 0}}>
-                                    <Link href="/" ><img style={{width: 500}} decoding="async" src="/assets/images/logo-1.png" alt="logo" /></Link>
+                                    <Link href="/" ><img style={{width: 400}} decoding="async" src="/assets/images/logo-1.png" alt="logo" /></Link>
                                 </div>
                                 <div className="title" style={{margin: 0, padding: 0}}>
                                     <h2>We are here with a new concept</h2>
@@ -64,9 +64,6 @@ export default function Home1() {
                         </div>
                     </div>
                 </div>
-                {/*===============spacing==============*/}
-                <div className="pd_bottom_110" />
-                {/*===============spacing==============*/}
             </section>
         </>
     )

@@ -21,7 +21,7 @@ export default function Home1() {
     const [isFloating, setFloating] = useState(false);
     const handleFloating = () => setFloating(!isFloating);
 
-    const currentTime = new Date();
+    const desiredDate = new Date("2023-09-15");
 
     return (
         <>
@@ -58,7 +58,7 @@ export default function Home1() {
                             </div>
                             <div className="Countdown-timer">
                                 <div className="countdown text-left" data-date="Feb 15 2024 23:59:59">
-                                    <Countdown endDateTime={currentTime.setDate(currentTime.getDate() + 20)} />
+                                    <Countdown endDateTime={desiredDate} />
                                 </div>
                             </div>
                         </div>

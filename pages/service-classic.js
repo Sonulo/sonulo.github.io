@@ -355,6 +355,68 @@ export default function ServiceClassic() {
                                                         </div>
                                                     {/* </div> */}
                                                 </SwiperSlide>
+                                                <SwiperSlide>
+                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
+                                                        <div className="service_box style_two dark_color">
+                                                            <div className="service_content_two ">
+                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/service-image-3.png)' }}>
+                                                                    <div className="content_inner_in">
+                                                                        <div className="icon_image">
+                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                        </div>
+                                                                        <h2>
+                                                                            <Link href="#">Compliance Audits</Link>
+                                                                        </h2>
+                                                                        <p>Prevents our being able too what get like best every pleasure.</p>
+                                                                        <ul>
+                                                                            <li>Handling of employment</li>
+                                                                            <li>Greater retention rates</li>
+                                                                            <li>A fully engaged workforce</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="ovarlay_link">
+                                                                    <Link href="#"><i className="icon-right-arrow" /></Link>
+                                                                </div>
+                                                                <div className="overlay_content">
+                                                                    <h2><Link href="#">Compliance Audits</Link></h2>
+                                                                    <p>Prevents our being able too what get like best every pleasure.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {/* </div> */}
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
+                                                        <div className="service_box style_two dark_color">
+                                                            <div className="service_content_two ">
+                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/service-image-3.png)' }}>
+                                                                    <div className="content_inner_in">
+                                                                        <div className="icon_image">
+                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                        </div>
+                                                                        <h2>
+                                                                            <Link href="#">Compliance Audits</Link>
+                                                                        </h2>
+                                                                        <p>Prevents our being able too what get like best every pleasure.</p>
+                                                                        <ul>
+                                                                            <li>Handling of employment</li>
+                                                                            <li>Greater retention rates</li>
+                                                                            <li>A fully engaged workforce</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="ovarlay_link">
+                                                                    <Link href="#"><i className="icon-right-arrow" /></Link>
+                                                                </div>
+                                                                <div className="overlay_content">
+                                                                    <h2><Link href="#">Compliance Audits</Link></h2>
+                                                                    <p>Prevents our being able too what get like best every pleasure.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    {/* </div> */}
+                                                </SwiperSlide>
                                             </Swiper>
                                         </div>
                                     </div>

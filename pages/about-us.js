@@ -221,7 +221,7 @@ export default function AboutUs() {
                                                 <li>Scalability</li>
                                             </ul>
                                             <div className="btn_left">
-                                                <Link href="#" className="theme-btn one">Read More</Link>
+                                                <Link href="#new" className="theme-btn one">Read More</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -257,18 +257,18 @@ export default function AboutUs() {
                 
                 {/*-timeline--*/}
                 {/*-tab--*/}
-                <section className="tab-section bg_op_1" style={{ backgroundImage: 'url(/assets/images/tab-sec-bg.jpg)' }}>
+                <section id="new" className="tab-section bg_op_1" style={{ backgroundImage: 'url(/assets/images/tab-sec-bg.jpg)' }}>
                     {/*===============spacing==============*/}
                     <div className="pd_top_100" />
                     {/*===============spacing==============*/}
-                    <div className="container">
+                    <div className="container" >
                         <div className="row">
                             <div className="tabs_all_box  tabs_all_box_start type_one">
                                 <div className="tab_over_all_box">
                                     <div className="tabs_header clearfix">
                                         <ul className="showcase_tabs_btns nav-pills nav   clearfix">
                                             <li className="nav-item">
-                                                <a className={activeIndex === 1 ? "s_tab_btn nav-link active" : "s_tab_btn nav-link"} onClick={() => handleOnClick(1)}>01. Expertise</a>
+                                                <a className={activeIndex === 1 ? "s_tab_btn nav-link active" : "s_tab_btn nav-link"} onClick={() => handleOnClick(1)}>01. Expertised</a>
                                             </li>
                                             <li className="nav-item">
                                                 <a className={activeIndex === 2 ? "s_tab_btn nav-link active" : "s_tab_btn nav-link"} onClick={() => handleOnClick(2)}>02. Innovative</a>

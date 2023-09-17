@@ -1,7 +1,35 @@
 import Layout from "@/components/layout/Layout"
+import { useState } from "react"
+import emailjs from 'emailjs-com';
 import Link from "next/link"
 
 export default function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const sendEmail = async (e) => {
+        try {
+            e.preventDefault();
+
+            const templateParams = {
+                to_email: "me@pethumjeewantha.com", // Replace with the recipient's email address
+                from_name: name,
+                email,
+                subject,
+                message,
+              };
+      
+            await emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, templateParams, process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
+            alert("Mail Sent Successfully")
+            
+        } catch (error) {
+            console.error(error);
+            alert("Something went wrong")
+        }
+      };
+
     return (
         <>
             <Layout breadcrumbTitle="Contact">
@@ -16,34 +44,34 @@ export default function Contact() {
                                     <div className="contact_form_box_all type_one">
                                         <div className="contact_form_box_inner">
                                             <div className="contact_form_shortcode">
-                                                <form id="contact-form">
+                                                <form id="contact-form" onSubmit={sendEmail}>
                                                     <div className="messages" />
                                                     <div className="controls">
                                                         <div className="row">
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Name<br /></label>
-                                                                    <input type="text" name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name" />
+                                                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name" />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Email<br /></label>
-                                                                    <input type="text" name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id" />
+                                                                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id" />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Subject<br /></label>
-                                                                    <input type="text" name="subject" required="required" placeholder=" Subject  (Optional)" />
+                                                                    <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} name="subject" required="required" placeholder=" Subject  (Optional)" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Message<br /></label>
-                                                                    <textarea name="message" placeholder="Additional Information... (Optional) " rows={3} required="required" data-error="Please, leave us a message." defaultValue={""} />
+                                                                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" placeholder="Additional Information... (Optional) " rows={3} required="required" data-error="Please, leave us a message." defaultValue={""} />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>

@@ -10,6 +10,7 @@
         "sass": "sass --watch public/assets/css/scss/elements/theme-css.scss:public/assets/css/scss/elements/theme-css.css"
     },
     "dependencies": {
+        "emailjs-com": "^3.2.0",
         "eslint": "8.36.0",
         "eslint-config-next": "13.2.4",
         "isotope-layout": "^3.0.6",
@@ -25,6 +26,6 @@
         "swiper": "^9.2.4"
     },
     "resolutions": {
-      "react-countup/countup.js": "2.5.0"
+        "react-countup/countup.js": "2.5.0"
     }
 }

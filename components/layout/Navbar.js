@@ -159,6 +159,11 @@ export default function Navbar() {
                         </li>
                     </ul>
                 </li>
+                <li className="menu-item  nav-item">
+                    <Link href="/service-classic" className="dropdown-item nav-link">
+                        <span>Services</span>
+                    </Link>
+                </li>
                 <li className="menu-item menu-item-has-children dropdown nav-item">
                     <Link href="/#" className="dropdown-toggle nav-link">
                         <span>Pages</span>

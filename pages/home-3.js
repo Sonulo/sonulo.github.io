@@ -17,11 +17,6 @@ export default function Home3() {
                 <Service4 />
                 <About2 />
                 <Cta />
-                <FunFacts />
-                <Faqs />
-                <Project2 />
-                <Testimonial6 />
-                <Blog3 />
             </Layout>
         </>
     )

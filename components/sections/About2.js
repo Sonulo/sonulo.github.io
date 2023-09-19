@@ -13,13 +13,11 @@ export default function About2() {
                         <div className="col-xl-6 col-lg-12 mb-5 mb-lg-5 mb-xl-0">
                             <div className="image_boxes style_one">
                                 <div className="image one">
-                                    <img src="/assets/images/about/about-5.jpg" className="img" alt="image" />
+                                    <img src="/assets/images/about/about-16.jpg" className="img" alt="image" />
                                 </div>
                                 <div className="image two">
-                                    <img src="/assets/images/projects/project-detail-img-2.jpg" className="img" alt="image" />
-                                    <div className="video_box">
-                                        <VideoBox />
-                                    </div>
+                                    <img src="/assets/images/about/about-17.jpg" className="img" alt="image" />
+                                
                                 </div>
                             </div>
                         </div>
@@ -28,39 +26,35 @@ export default function About2() {
                             <div className="pd_left_20">
                                 <div className="title_all_box style_two  dark_color">
                                     <div className="title_sections two">
-                                        <div className="before_title">Make sense for your business</div>
-                                        <h2>The Growing Trend of Outsourcing HR Services</h2>
+                                        <div className="before_title">Why should you choose Sonulo ?</div>
+                                        <h2>The Pioneers of all kind of Software Solutions</h2>
                                         <div className="description_box">
-                                            <p>Countsy provides Finance, Accounting and HR Solutions to venture backed startups.
-                                                Through a unique combination</p>
+                                            <p>We excel in full-stack development, mobile apps, cloud services, and AI solutions</p>
                                         </div>
                                     </div>
                                     {/*===============spacing==============*/}
                                     <div className="mr_bottom_20" />
                                     {/*===============spacing==============*/}
                                 </div>
-                                <div className="extra_content authour_box_two dark_color">
+                                <div className="extra_content authour_box_two">
                                     <div className="authour_box_content two">
                                         <div className="image">
                                             <img src="/assets/images/authour-image.png" className="img-fluid authour_image" alt="authour Image" />
                                         </div>
-                                        <div className="text">
+                                        {/* <div className="text">
                                             <h6>Liam Oliver, <span>Founder &amp; CEO of Qetus</span></h6>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut elit tellus, luctus
                                                 nec
                                                 ullamcorper mattis </p>
-                                            <img src="/assets/images/signature.png" className="img-fluid sign_image_two" alt="authour Image" />
-                                        </div>
+                                            
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/*===============spacing==============*/}
                                 <div className="mr_bottom_30" />
                                 {/*===============spacing==============*/}
                                 <div className="description_box">
-                                    <p>We also have a number of staff who are recipients and who are currently working
-                                        advanced
-                                        HR degrees. We are very proud of our long and successful history of organizations
-                                        industries .</p>
+                                    <p>Our agile approach, creativity, and commitment to quality drive us. We're your partners in the digital age, delivering scalable, secure, and data-driven solutions. Join us on a journey of innovation and transformation. Discover limitless possibilities with Sonulo.</p>
                                 </div>
                                 {/*===============spacing==============*/}
                                 <div className="mr_bottom_30" />
@@ -79,14 +73,13 @@ export default function About2() {
                             <div className="icon_box_all style_one">
                                 <div className="icon_content icon_centers">
                                     <div className="icon">
-                                        <span className=" icon-line-chart" />
+                                    <span className="icon-star" />
                                     </div>
                                     <div className="txt_content">
-                                        <h3>
-                                            <Link href="#" >Claims of duty</Link>
-                                        </h3>
-                                        <p>Certain circumstances seds owing to the claims duty our righteous indignation and so
-                                            beguiled.</p>
+                                        <h5>
+                                        Quality-First Approach
+                                        </h5>
+                                        <p>We prioritize quality above all else, ensuring excellence in every product and service we deliver to meet and exceed expectations</p>
                                     </div>
                                 </div>
                             </div>
@@ -98,12 +91,11 @@ export default function About2() {
                             <div className="icon_box_all style_one">
                                 <div className="icon_content icon_centers ">
                                     <div className="icon">
-                                        <span className="icon-bow-and-arrow" />
+                                        <span className="icon-users" />
                                     </div>
                                     <div className="txt_content">
-                                        <h3><Link href="#" >Accepted always</Link></h3>
-                                        <p>To take a trivial example, which of us ever undertakes get laborious physical
-                                            exercise.</p>
+                                        <h5>Customer-Centric Philosophy</h5>
+                                        <p>Customers are at the heart of everything we do, driving our decisions and actions to ensure their satisfaction and success.</p>
                                     </div>
                                 </div>
                             </div>

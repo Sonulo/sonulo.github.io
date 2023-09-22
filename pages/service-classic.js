@@ -394,7 +394,7 @@ export default function ServiceClassic() {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="image">
-                                                            <img src="/assets/images/pythonlib1.png" alt="python_libraries-logo" />
+                                                            <img src="/assets/images/flutter.png" alt="flutter-logo" />
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
@@ -415,6 +415,26 @@ export default function ServiceClassic() {
                                                     <SwiperSlide>
                                                         <div className="image">
                                                             <img src="/assets/images/blockchain.png" alt="blockchain-logo" />
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="image">
+                                                            <img src="/assets/images/mongodb.png" alt="mongodb-logo" />
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="image">
+                                                            <img src="/assets/images/firebase.png" alt="firebase-logo" />
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="image">
+                                                            <img src="/assets/images/swift.png" alt="swift-logo" />
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="image">
+                                                            <img src="/assets/images/postgre.png" alt="postgre-logo" />
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>

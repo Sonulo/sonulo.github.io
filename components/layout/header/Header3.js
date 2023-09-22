@@ -40,9 +40,6 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                                 </Link>
                                             </div>
                                         </div>
-                                        <div className="contntent cbutton">
-                                            <Link href="#" className="theme-btn three"> Get In Touch </Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -80,16 +77,6 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                         <div className="navigation_menu">
                                             <Navbar />
                                         </div>
-                                    </div>
-                                    <div className="header_right_content">
-                                        <ul>
-                                            <li>
-                                                <button type="button" className="search-toggler" onClick={handleSearch}><i className="icon-search" /></button>
-                                            </li>
-                                            <li>
-                                                <button type="button" className="contact-toggler" onClick={handleContactPopup}><i className="icon-setup-dots" /></button>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>

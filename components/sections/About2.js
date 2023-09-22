@@ -60,7 +60,7 @@ export default function About2() {
                                 <div className="mr_bottom_30" />
                                 {/*===============spacing==============*/}
                                 <div className="theme_btn_all color_one">
-                                    <Link href="#" className="theme-btn three">Contact us</Link>
+                                    <Link href="/contact" className="theme-btn three">Contact us</Link>
                                 </div>
                                 {/*===============spacing==============*/}
                                 <div className="mr_bottom_20" />

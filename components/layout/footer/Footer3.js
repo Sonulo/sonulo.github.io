@@ -54,85 +54,15 @@ export default function Footer3({ }) {
                                     <div className="navigation_foo_box">
                                         <div className="navigation_foo_inner">
                                             <ul className="menu">
-                                                <li><Link href="#">Services</Link></li>
-                                                <li><Link href="#">Infrastructure</Link></li>
-                                                <li><Link href="#">Client Support</Link></li>
-                                                <li><Link href="#">Privacy policy</Link></li>
-                                                <li><Link href="#">Terms of use</Link></li>
-                                                <li><Link href="#">Sitemap</Link></li>
-                                                <li><Link href="#">Careers</Link></li>
+                                                <li><Link href="/service-classic">Services</Link></li>
+                                                <li><Link href="/about-us">About Us</Link></li>
+                                                <li><Link href="/contact">Contact</Link></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 mb-5 mb-lg-0 mb-xl-0">
-                                <div className="footer_widgets wid_tit style_two">
-                                    {/*===============spacing==============*/}
-                                    <div className="pd_top_20" />
-                                    {/*===============spacing==============*/}
-                                    <div className="fo_wid_title">
-                                        <h2>Recent Posts</h2>
-                                    </div>
-                                </div>
-                                <div className="footer_widgets recent_news_em_wp style_one  clearfix">
-                                    <div className="news_boxed light_color">
-                                        <div className="news_recent clearfix image_s">
-                                            <div className="image ">
-                                                <img width={750} height={420} src="assets/images/blog/blog-image-9.jpg" className="img-fluid" alt="img" loading="lazy" />
-                                            </div>
-                                            <div className="content ">
-                                                <h2 className="title"><Link href="/blog-single" >Why Should Business Payroll
-                                                    Outsourcing?</Link></h2>
-                                                <Link className="date" href="#"><span className="fa fa-clock-o" />October 8, {new Date().getFullYear()}</Link>
-                                            </div>
-                                        </div>
-                                        <div className="news_recent clearfix image_s">
-                                            <div className="image ">
-                                                <img width={750} height={420} src="assets/images/blog/blog-image-8.jpg" className="img-fluid" alt="img" loading="lazy" />
-                                            </div>
-                                            <div className="content ">
-                                                <h2 className="title"><Link href="/blog-single" >Most Employees Support
-                                                    Measures</Link></h2>
-                                                <Link className="date" href="#"><span className="fa fa-clock-o" />October 8, {new Date().getFullYear()}</Link>
-                                            </div>
-                                        </div>
-                                        <div className="news_recent clearfix image_s">
-                                            <div className="image ">
-                                                <img width={750} height={420} src="assets/images/blog/blog-image-7.jpg" className="img-fluid" alt="img" loading="lazy" />
-                                            </div>
-                                            <div className="content ">
-                                                <h2 className="title"><Link href="/blog-single" >How to Handle Employee</Link>
-                                                </h2>
-                                                <Link className="date" href="#"><span className="fa fa-clock-o" />October 8, {new Date().getFullYear()}</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div className="col-xl-3 col-lg-6 col-md-12 col-sm-12">
-                                <div className="footer_widgets wid_tit style_two">
-                                    {/*===============spacing==============*/}
-                                    <div className="pd_top_20" />
-                                    {/*===============spacing==============*/}
-                                    <div className="fo_wid_title">
-                                        <h2>Subscribe Us Today</h2>
-                                    </div>
-                                </div>
-                                <div className="footer_widgets foo_subscribe light_color style_one">
-                                    <div className="item_subscribe with_text">
-                                        <p>Subscribe Us &amp; Recive Our Offers and Updates i Your Inbox Directly.</p>
-                                        <div className="shortcodes">
-                                            <form className="mc4wp-form" method="post" data-name="Subscibe">
-                                                <div className="mc4wp-form-fields">
-                                                    <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                                    <input type="submit" defaultValue="Sign up" />
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <p>* We do not share your email id</p>
-                                    </div>
-                                </div>
                                 <div className="social_media_v_one">
                                     <ul>
                                         <li>

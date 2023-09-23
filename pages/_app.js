@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
     }, [])
     return (
         <>
-            <title>Creote - Corporate & Consulting Business NextJS Template</title>
+            <title>Sonulo - Software Development Company</title>
             {!loading ? (
                 <Component {...pageProps} />
             ) : (

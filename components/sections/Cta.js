@@ -28,7 +28,7 @@ export default function Cta() {
                                                 <span className="icon-phone-call1 icon" />
                                                 <div className="content_bx">
                                                     <h2>Contact Us Soon</h2>
-                                                    <p>creote@support.com &amp; 16599349993</p>
+                                                    <p>info@sonulo.com</p>
                                                 </div>
                                             </div>
                                         </div>

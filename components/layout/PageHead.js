@@ -5,9 +5,11 @@ const PageHead = ({ headTitle }) => {
         <>
             <Head>
                 <title>
-                    {headTitle ? headTitle : "Creote - Just another Nextjs Template"}
+                    {headTitle ? headTitle : "Sonulo - Software Development Company"}
                 </title>
             </Head>
         </>
     )
-}export default PageHead
+}
+
+export default PageHead

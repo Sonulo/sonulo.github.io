@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { Autoplay, Navigation, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
+import Head from 'next/head'
 
 export default function ServiceClassic() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -93,6 +94,10 @@ export default function ServiceClassic() {
     };
     return (
         <>
+            <Head>
+                <title>Sonulo - Services</title>
+            </Head>
+
             <Layout breadcrumbTitle="Our Services & Technologies" headerStyle={3} footerStyle={3}>
                 <div>
                     <section className="service-section">

@@ -8,10 +8,14 @@ import HeroSlider3 from "@/components/sections/HeroSlider3"
 import Project2 from "@/components/sections/Project2"
 import Service4 from "@/components/sections/Service4"
 import Testimonial6 from "@/components/sections/Testimonial6"
+import Head from 'next/head'
 
 export default function Home3() {
     return (
         <>
+            <Head>
+                <title>Sonulo - Software Development Company</title>
+            </Head>
             <Layout headerStyle={3} footerStyle={3}>
                 <HeroSlider3 />
                 <Service4 />

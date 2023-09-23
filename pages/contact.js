@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout"
 import { useState } from "react"
 import emailjs from 'emailjs-com';
 import Link from "next/link"
+import Head from 'next/head'
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -32,6 +33,9 @@ export default function Contact() {
 
     return (
         <>
+            <Head>
+                <title>Sonulo - Contact</title>
+            </Head>
             <Layout breadcrumbTitle="Contact" headerStyle={3} footerStyle={3}>
                 <div>
                     <section className="contact-section">
@@ -140,33 +144,6 @@ export default function Contact() {
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    {/*===============spacing==============*/}
-                                    <div className="pd_bottom_40" />
-                                    {/*===============spacing==============*/}
-                                    <div className="social_media_v_one style_two">
-                                        <ul>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-facebook" />
-                                                    <small>facebook</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-twitter" />
-                                                    <small>twitter</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-skype" />
-                                                    <small>skype</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-instagram" />
-                                                    <small>instagram</small>
-                                                </Link>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>

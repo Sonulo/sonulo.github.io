@@ -139,7 +139,7 @@ export default function AboutUs() {
                                         </div>
                                     </div>
                                     <div className="theme_btn_all color_one">
-                                        <Link href="#" className="theme-btn five">Contact us<i className="icon-right-arrow" /></Link>
+                                        <Link href="/contact" className="theme-btn five">Contact us<i className="icon-right-arrow" /></Link>
                                     </div>
                                 </div>
                             </div>

@@ -12,7 +12,7 @@ export default function Navbar() {
             </ul> */}
             <ul id="myNavbar" className="navbar_nav">
                 <li className="menu-item  nav-item">
-                    <Link href="/home-3" className="dropdown-item nav-link">
+                    <Link href="/" className="dropdown-item nav-link">
                         <span>Home</span>
                     </Link>
                 </li>

@@ -19,25 +19,7 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                         <div className="contntent email">
                                             <i className="icon-email" />
                                             <div className="text">
-                                                <Link href="mailto:sendmail@creote.com">sendmail@creote.com</Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="right_side common_css">
-                                        <div className="contntent media">
-                                            <div className="text">
-                                                <Link href="#" >
-                                                    <i className="fa fa-facebook" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-twitter" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-skype" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-telegram" />
-                                                </Link>
+                                                <Link href="mailto:info@sonulo.com">info@sonulo.com</Link>
                                             </div>
                                         </div>
                                     </div>

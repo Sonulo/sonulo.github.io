@@ -284,8 +284,7 @@ export default function AboutUs() {
                                             </li>
                                         </ul>
                                         <div className="toll_free">
-                                            <Link href="tel:180667586677"> <i className="icon-phone-call" />Call For Free
-                                                Consultation</Link>
+                                            <Link href="mailto:info@sonulo.com"> <i className="icon-phone-call" />Contact Us</Link>
                                         </div>
                                     </div>
                                     <div className="s_tab_wrapper">

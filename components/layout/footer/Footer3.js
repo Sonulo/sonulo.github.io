@@ -45,19 +45,15 @@ export default function Footer3({ }) {
                                             <div className="top">
                                                 <h6> Location</h6>
                                                 <p>
-                                                    280 Granite Run Drive Suite #200
-                                                    Lancaster, PA 1760
+                                                    302/A Hokandara South, Hokandara,
+                                                    Thalawathugoda, Colombo, LK 10118
                                                 </p>
                                             </div>
                                             <div className="bottom">
                                                 <h6> Contact</h6>
                                                 <div className="con_content">
-                                                    <h5> Phone :</h5>
-                                                    <Link href="/tel:+9806071234"> +98 060 712 34</Link>
-                                                </div>
-                                                <div className="con_content">
-                                                    <h5> Mail Us :</h5>
-                                                    <Link href="/tel:info@sonulo.com"> info@sonulo.com</Link>
+                                                    <h5> Mail Us: </h5>
+                                                    <Link href="/tel:info@sonulo.com">&nbsp;info@sonulo.com</Link>
                                                 </div>
                                             </div>
                                         </div>

@@ -108,7 +108,7 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> Post Address </h3>
                                                 <p>
-                                                    280 Granite Run Drive Suite #200 Lancaster, PA 1760
+                                                    302/A Hokandara South, Hokandara, Thalawathugoda, Colombo, LK 10118
                                                 </p>
                                             </div>
                                         </div>
@@ -124,7 +124,7 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> General Enquires </h3>
                                                 <p>
-                                                    Phone: +98 060 712 34 &amp; Email: sendmail@qetus.com
+                                                    Email: info@sonulo.com
                                                 </p>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> Operation Hours </h3>
                                                 <p>
-                                                    Mon-Satday: 09.00 to 07.00 (Sunday: Closed)
+                                                    Mon-Satday: 08.00 to 07.00 (Sunday: Closed)
                                                 </p>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                                     <section className="map-section">
                                         {/*Map Outer*/}
                                         <div className="map-outer">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan%20Rafael%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" height={570} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310974!2d79.81500568842861!3d6.921836877840634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1695567886254!5m2!1sen!2slk" height={570} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                                         </div>
                                     </section>
                                 </div>

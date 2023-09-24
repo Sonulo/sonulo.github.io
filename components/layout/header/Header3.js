@@ -13,7 +13,7 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                         <div className="contntent address">
                                             <i className="icon-placeholder" />
                                             <div className="text">
-                                                <span>61W Business Str Hobert, LA </span>
+                                                <span>302/A Hokandara South, Hokandara, Thalawathugoda, Colombo, LK 10118</span>
                                             </div>
                                         </div>
                                         <div className="contntent email">
@@ -38,13 +38,6 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                             <img src="assets/images/logo-white-1.png" alt="Creote Elementor" className="logo_default" />
                                             <img src="assets/images/logo-default.png" alt="Creote Elementor" className="logo__sticky" />
                                         </Link>
-                                    </div>
-                                    <div className="phone_box">
-                                        <i className="icon-phone-call1" />
-                                        <div className="text">
-                                            <small>Phone</small>
-                                            <Link href="tel:+9806071234">+9806071234</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import VideoBox from "../elements/VideoBox"
+
 export default function About2() {
     return (
         <>
@@ -27,7 +27,7 @@ export default function About2() {
                                 <div className="title_all_box style_two  dark_color">
                                     <div className="title_sections two">
                                         <div className="before_title">Why should you choose Sonulo ?</div>
-                                        <h2>The Pioneers of all kind of Software Solutions</h2>
+                                        <h2>Trailblazing the Future of Software Solutions</h2>
                                         <div className="description_box">
                                             <p>We excel in full-stack development, mobile apps, cloud services, and AI solutions</p>
                                         </div>
@@ -39,15 +39,11 @@ export default function About2() {
                                 <div className="extra_content authour_box_two">
                                     <div className="authour_box_content two">
                                         <div className="image">
-                                            <img src="/assets/images/authour-image.png" className="img-fluid authour_image" alt="authour Image" />
+                                            <img src="/assets/images/about_badge.png" className="img-fluid authour_image" alt="authour Image" />
+                                        </div>                                     
+                                        <div className="text">
+                                            <h4>Experts in Every Field, Ready for You.</h4>  
                                         </div>
-                                        {/* <div className="text">
-                                            <h6>Liam Oliver, <span>Founder &amp; CEO of Qetus</span></h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut elit tellus, luctus
-                                                nec
-                                                ullamcorper mattis </p>
-                                            
-                                        </div> */}
                                     </div>
                                 </div>
                                 {/*===============spacing==============*/}

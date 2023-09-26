@@ -45,27 +45,17 @@ export default function HeroSlider3() {
                                     <div className="col-md-12 col-lg-7 col-sm-12 col-xs-12">
                                         <div className="slider_content">
                                             <h1 className="animated _fadeInDownBig">
-                                                Hands On Professional Touch
+                                            Your Trusted Digital Partner
                                             </h1>
+                                            <br></br>
                                             <p className="animated _flipInY">
-                                                On the other hand, we denounce with righteous indignation and dislike
-                                                men who are so beguiled.
+                                            At Sonulo, we transcend being just a software company; we're your trusted digital partner. Your vision becomes our mission. Together, we navigate the intricate digital landscape, working tirelessly to ensure unparalleled success in the digital age. Our partnership is built on trust, expertise, and a shared commitment to your digital journey.
                                             </p>
-                                            <ul>
-                                                <li>
-                                                    <Link href="#" className="theme-btn three  animated _zoomIn">Read More</Link >
-                                                </li>
-                                                <li>
-                                                    <div className="video_box animated _flipInX">
-                                                        <VideoBox />
-                                                    </div>
-                                                </li>
-                                            </ul>
                                         </div>
                                     </div>
                                     <div className="col-md-12 col-lg-5 col-sm-12 col-xs-12 image_column">
                                         <div className="slider_image _flipInX" style={{ margin: '50px 0px 0px -70px' }}>
-                                            <img src="/assets/images/sliders/slider-3-2.jpg" className="img-fluid" alt="slider image" />
+                                            <img src="/assets/images/sliders/slider-new-1.jpg" className="img-fluid" alt="slider image" />
                                         </div>
                                     </div>
                                 </div>
@@ -81,27 +71,17 @@ export default function HeroSlider3() {
                                     <div className="col-md-12 col-lg-7 col-sm-12 col-xs-12">
                                         <div className="slider_content">
                                             <h1 className="animated _fadeInDownBig">
-                                                In House Specialists On Demand
+                                            Leading the Tech Revolution
                                             </h1>
+                                            <br></br>
                                             <p className="animated _flipInY">
-                                                Duty obligations of business it will frequently occur that pleasures
-                                                have to be repudiated and annoyances accepted.
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    <Link href="#" className="theme-btn three  animated _zoomIn">Read More</Link >
-                                                </li>
-                                                <li>
-                                                    <div className="video_box animated _flipInX">
-                                                        <VideoBox />
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                            At Sonulo, we're pioneers at the forefront of the tech revolution. Our unwavering commitment to innovation and excellence allows us to set new industry standards. With innovative solutions and a passion for pushing boundaries, we redefine the digital landscape, propelling your business into a future brimming with cutting-edge possibilities.
+                                            </p>                                         
                                         </div>
                                     </div>
                                     <div className="col-md-12 col-lg-5 col-sm-12 col-xs-12 image_column">
                                         <div className="slider_image _flipInX" style={{ margin: '50px 0px 0px 50px' }}>
-                                            <img src="/assets/images/sliders/slider-3-3.jpg" className="img-fluid" alt="slider image" />
+                                            <img src="/assets/images/sliders/slider-new-2.jpg" className="img-fluid" alt="slider image" />
                                         </div>
                                     </div>
                                 </div>
@@ -117,28 +97,18 @@ export default function HeroSlider3() {
                                     <div className="col-md-12 col-lg-7 col-sm-12 col-xs-12">
                                         <div className="slider_content">
                                             <h1 className="animated _fadeInDownBig">
-                                                Be spoke Outsourced HR Solutions
+                                            Tailored Solutions for Success
                                             </h1>
+                                            <br></br>
                                             <p className="animated _flipInY">
-                                                These cases are perfectly simple and easy to distinguish. In a free
-                                                hour, when our power of choice is untrammelled.
+                                            Our mission at Sonulo is to craft tailored solutions that drive your success. We firmly believe in the power of customization and reject the one-size-fits-all approach. Your unique needs are our primary focus. In a rapidly evolving digital landscape, adaptability is paramount, and we ensure your solutions are perfectly aligned with your goals.
                                             </p>
-                                            <ul>
-                                                <li>
-                                                    <Link href="#" className="theme-btn three animated _zoomIn">
-                                                        Read More</Link >
-                                                </li>
-                                                <li>
-                                                    <div className="video_box animated _flipInX">
-                                                        <VideoBox />
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                           
                                         </div>
                                     </div>
                                     <div className="col-md-12 col-lg-5 col-sm-12 col-xs-12 image_column">
                                         <div className="slider_image _flipInX" style={{ margin: '50px 0px 0px 50px' }}>
-                                            <img src="/assets/images/sliders/slider-3-1.jpg" className="img-fluid" alt="slider image" />
+                                            <img src="/assets/images/projects/project-3-img.jpg" className="img-fluid" alt="slider image" />
                                         </div>
                                     </div>
                                 </div>

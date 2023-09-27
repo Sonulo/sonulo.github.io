@@ -110,7 +110,7 @@ export default function AboutUs() {
                                             <div className="icon_box_all  style_two">
                                                 <div className="icon_content  icon_imgs ">
                                                     <div className="icon">
-                                                        <img src="/assets/images/icon-img-n-1.png" className="img-fluid svg_image" alt="icon png" />
+                                                        <img src="/assets/images/icon-img-new-1.png" className="img-fluid svg_image" alt="icon png" />
                                                     </div>
                                                     <div className="txt_content">
                                                         <h6>Tailored Advice &amp; Support
@@ -126,7 +126,7 @@ export default function AboutUs() {
                                             <div className="icon_box_all  style_two">
                                                 <div className="icon_content  icon_imgs ">
                                                     <div className="icon">
-                                                        <img src="/assets/images/icon-img-n-2.png" className="img-fluid svg_image" alt="icon png" />
+                                                        <img src="/assets/images/icon-img-new-2.png" className="img-fluid svg_image" alt="icon png" />
                                                     </div>
                                                     <div className="txt_content">
                                                         <h6>Flexible Company Policies</h6>
@@ -145,7 +145,7 @@ export default function AboutUs() {
                             </div>
                             <div className="col-xl-6 col-lg-12">
                                 <div className="image_boxes style_two">
-                                    <img src="/assets/images/shape-1.png" className="background_image" alt="image" />
+                                    <img src="/assets/images/shape-new-1.png" className="background_image" alt="image" />
                                     <div className="image one">                                       
                                         <img src="/assets/images/about/about-7.png" className="img-fluid" alt="image" />
                                     </div>
@@ -176,7 +176,7 @@ export default function AboutUs() {
                             <div className="col-lg-12">
                                 <div className="title_all_box style_one text-center dark_color">
                                     <div className="title_sections">
-                                        <h2 className="title">Stand Out From The Rest</h2>
+                                        <h2 className="title" >Stand Out From The Rest</h2>
                                     </div>
                                     {/*===============spacing==============*/}
                                     <div className="pd_bottom_20" />
@@ -213,7 +213,7 @@ export default function AboutUs() {
                                         <div className="txt_content">
                                             <h5>Our Core Values</h5>
                                             <p>Our approach is simple yet effective: we listen, we innovate, and we deliver</p>
-                                            <ul>
+                                            <ul className="ui-vision">
                                                 <li>Expertise</li>
                                                 <li>Innovation</li>
                                                 <li>Quality</li>

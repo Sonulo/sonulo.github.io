@@ -35,8 +35,8 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                 <div className="header_log_outer">
                                     <div className="header_logo_box">
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="assets/images/logo-white-1.png" alt="Creote Elementor" className="logo_default" />
-                                            <img src="assets/images/logo-default.png" alt="Creote Elementor" className="logo__sticky" />
+                                            <img src="assets/images/Sonulo/sonulo-logo2.png" alt="Creote Elementor" className="logo_default" />
+                                            <img src="assets/images/Sonulo/sonulo-logo2.png" alt="Creote Elementor" className="logo__sticky" />
                                         </Link>
                                     </div>
                                 </div>

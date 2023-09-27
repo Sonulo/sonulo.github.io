@@ -103,7 +103,7 @@ export default function Service4() {
                               <div className="content_inner_in">
                                 <div className="icon_image">
                                   <img
-                                    src="/assets/images/service-ico-2.png"
+                                    src="/assets/images/service/f-stack-icon.png"
                                     className="img-fluid"
                                     alt="Service Image"
                                   />
@@ -146,7 +146,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/app-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />
@@ -194,7 +194,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/ML-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />
@@ -245,7 +245,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/ai-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />
@@ -294,7 +294,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/ui-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />
@@ -347,7 +347,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/hosting-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />
@@ -397,7 +397,7 @@ export default function Service4() {
                             <div className="content_inner_in">
                               <div className="icon_image">
                                 <img
-                                  src="/assets/images/service-ico-2.png"
+                                  src="/assets/images/service/analytics-icon.png"
                                   className="img-fluid"
                                   alt="Service Image"
                                 />

@@ -39,7 +39,7 @@ export default function About2() {
                                 <div className="extra_content authour_box_two">
                                     <div className="authour_box_content two">
                                         <div className="image">
-                                            <img src="/assets/images/about_badge.png" className="img-fluid authour_image" alt="authour Image" />
+                                            <img src="/assets/images/about_badge_1.png" className="img-fluid authour_image" alt="authour Image" />
                                         </div>                                     
                                         <div className="text">
                                             <h4>Experts in Every Field, Ready for You.</h4>  

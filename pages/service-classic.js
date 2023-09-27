@@ -117,7 +117,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/fullstack.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/f-stack-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">Fullstack Development</Link>
@@ -145,7 +145,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/mobileapp.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/app-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">Mobile App</Link>
@@ -173,7 +173,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/ML.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/ML-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">Machine Learning</Link>
@@ -201,7 +201,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/AI.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/ai-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">AI Related Services</Link>
@@ -229,7 +229,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/ui.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/ui-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">UI/UX Designing</Link>
@@ -257,7 +257,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/cloud1.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/hosting-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">Hosting Services</Link>
@@ -285,7 +285,7 @@ export default function ServiceClassic() {
                                                                 <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/datascience.jpg)' }}>
                                                                     <div className="content_inner_in">
                                                                         <div className="icon_image">
-                                                                            <img src="/assets/images/service-ico-2.png" className="img-fluid" alt="Service Image" />
+                                                                            <img src="/assets/images/service/analytics-icon.png" className="img-fluid" alt="Service Image" />
                                                                         </div>
                                                                         <h2>
                                                                             <Link href="#">Data Analytics</Link>

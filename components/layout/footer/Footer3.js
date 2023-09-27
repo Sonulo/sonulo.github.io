@@ -16,16 +16,14 @@ export default function Footer3({ }) {
                                     <div className="about_company_inner">
                                         <div className="footer_logo">
                                             <Link href="#" target="_blank" >
-                                                <img src="assets/images/logo-white.png" alt="logo" />
+                                                <img src="assets/images/Sonulo/sonulo-logo2.png" alt="logo" />
                                             </Link>
                                             {/*===============spacing==============*/}
                                             <div className="pd_bottom_30" />
                                             {/*===============spacing==============*/}
                                         </div>
                                         <div className="content_box">
-                                            <p>The great explorer of the truth, the master-builder of human happiness no one rejects
-                                                dislikes avoids pleasure itself because it is pleasure but because know who do not
-                                                those how to pursue</p>
+                                            <p>We're on a mission to harness the power of technology to solve complex challenges. Our expert team develops innovative software solutions that drive efficiency and propel businesses forward.</p>
                                         </div>
                                     </div>
                                 </div>

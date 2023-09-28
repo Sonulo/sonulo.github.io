@@ -42,7 +42,7 @@ export default function About2() {
                                             <img src="/assets/images/about_badge_1.png" className="img-fluid authour_image" alt="authour Image" />
                                         </div>                                     
                                         <div className="text">
-                                            <h4>Experts in Every Field, Ready for You.</h4>  
+                                            <h4>Experts in IT Field, Ready for You.</h4>  
                                         </div>
                                     </div>
                                 </div>

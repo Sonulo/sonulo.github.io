@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Autoplay, Navigation, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Head from 'next/head'
+import CheckCircle from "@/components/elements/CheckCircle"
 
 export default function ServiceClassic() {
     const [activeIndex, setActiveIndex] = useState(1);
@@ -100,224 +101,7 @@ export default function ServiceClassic() {
 
             <Layout breadcrumbTitle="Our Services & Technologies" headerStyle={3} footerStyle={3}>
                 <div>
-                    <section className="service-section">
-                        {/*===============spacing==============*/}
-                        <div className="pd_top_90" />
-                        {/*===============spacing==============*/}
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-12">
-                                    <div className="client_logo_carousel type_one">
-                                        <div className="swiper-container">
-                                            <Swiper {...swiperOptions1} className="swiper-wrapper">
-                                                <SwiperSlide>
-                                                    <div className="">
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/fullstack.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/f-stack-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">Fullstack Development</Link>
-                                                                        </h2>
-                                                                        {/* <p>Our fullstack development services cover both frontend and backend expertise, ensuring comprehensive solutions for your project. From intuitive user interfaces to robust server-side architecture, we create dynamic and scalable web applications tailored to your unique needs.</p> */}
-                                                                        <ul>
-                                                                            <li>Both frontend and backend expertise</li>
-                                                                            <li>Ensuring comprehensive solutions</li>
-                                                                            <li>dynamic and scalable web applications</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">Web development</Link></h2>
-                                                                    <p>we create dynamic and scalable web applications tailored to your unique needs.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/mobileapp.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/app-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">Mobile App</Link>
-                                                                        </h2>
-                                                                        {/* <p></p> */}
-                                                                        <ul>
-                                                                            <li>Elevate your brand's mobile presence with our mobile app development expertise</li>
-                                                                            <li>User-friendly, feature-rich applications </li>
-                                                                            <li>iOS and Android platforms</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">Mobile App</Link></h2>
-                                                                    <p>Elevate your brand's mobile presence with our mobile app development expertise.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/ML.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/ML-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">Machine Learning</Link>
-                                                                        </h2>
-                                                                        {/* <p>Prevents our being able too what get like best every pleasure.</p> */}
-                                                                        <ul>
-                                                                            <li>Transforming data into actionable insights</li>
-                                                                            <li>Enhancing processes with intelligent automation</li>
-                                                                            <li>Unlocking potential through predictive analytics</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">Machine Learning</Link></h2>
-                                                                    <p>Unleash the power of machine learning for predictive analysis and pattern recognition.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/AI.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/ai-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">AI Related Services</Link>
-                                                                        </h2>
-                                                                        {/* <p>Explore the world of artificial intelligence with our AI-related services. We leverage cutting-edge AI technologies to automate tasks, improve decision-making, and enhance user interactions. From chatbots to computer vision, we bring AI solutions to life.</p> */}
-                                                                        <ul>
-                                                                            <li>Harnessing AI for smarter decisions</li>
-                                                                            <li>Automating tasks with cutting-edge technology</li>
-                                                                            <li>Innovating through artificial intelligence solutions</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">AI Related Services</Link></h2>
-                                                                    <p>Explore the world of artificial intelligence with our AI-related services. From chatbots to computer vision, we bring AI solutions to life.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/ui.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/ui-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">UI/UX Designing</Link>
-                                                                        </h2>
-                                                                        {/* <p>Exceptional user experiences begin with intuitive interfaces. Our UI/UX design services prioritize user-centric design, ensuring that your digital products not only look stunning but also provide seamless and enjoyable interactions.</p> */}
-                                                                        <ul>
-                                                                            <li>Crafting intuitive, user-friendly digital experiences</li>
-                                                                            <li>Elevating brands through exceptional design</li>
-                                                                            <li>Designing interfaces that captivate and convert</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">UI/UX Designing</Link></h2>
-                                                                    <p>Our UI/UX design services prioritize user-centric design, ensuring that your digital products not only look stunning but also provide seamless and enjoyable interactions.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/cloud1.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/hosting-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">Hosting Services</Link>
-                                                                        </h2>
-                                                                        {/* <p>Secure, reliable, and scalable hosting solutions are the backbone of your online presence.</p> */}
-                                                                        <ul>
-                                                                            <li>Reliable hosting for your online presence</li>
-                                                                            <li>Scalable infrastructure for seamless performance</li>
-                                                                            <li>Secure and always-available web hosting</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">Hosting Services</Link></h2>
-                                                                    <p>Our hosting services provide a robust infrastructure to ensure your websites and applications are always available and perform at their best.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                                <SwiperSlide>
-                                                    {/* <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12"> */}
-                                                        <div className="service_box style_two dark_color">
-                                                            <div className="service_content_two ">
-                                                                <div className="content_inner" style={{ backgroundImage: 'url(/assets/images/service/datascience.jpg)' }}>
-                                                                    <div className="content_inner_in">
-                                                                        <div className="icon_image">
-                                                                            <img src="/assets/images/service/analytics-icon.png" className="img-fluid" alt="Service Image" />
-                                                                        </div>
-                                                                        <h2>
-                                                                            <Link href="#">Data Analytics</Link>
-                                                                        </h2>
-                                                                        {/* <p>Harness the power of data with our data analysis services. We transform raw information into valuable insights, helping you make data-driven decisions. Whether it's market trends, customer behavior, or performance metrics, we unlock the potential hidden within your data.</p> */}
-                                                                        <ul>
-                                                                            <li>Turning data into actionable insights</li>
-                                                                            <li>Data-driven decisions for business growth</li>
-                                                                            <li>Unlocking hidden potential in your data</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="overlay_content">
-                                                                    <h2><Link href="#">Data Analytics</Link></h2>
-                                                                    <p>Harness the power of data with our data analysis services. Whether it's market trends, customer behavior, or performance metrics, we unlock the potential hidden within your data.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    {/* </div> */}
-                                                </SwiperSlide>
-                                            </Swiper>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*===============spacing==============*/}
-                        <div className="pd_bottom_90" />
-                        {/*===============spacing==============*/}
-                    </section>
-                    {/*-service end-*/}
-                    <section className="service-section-two bg_light_1">
+                <section className="service-section-two bg_light_1">
                         {/*===============spacing==============*/}
                         <div className="pd_top_90" />
                         {/*===============spacing==============*/}
@@ -452,8 +236,125 @@ export default function ServiceClassic() {
                         <div className="pd_bottom_90" />
                         {/*===============spacing==============*/}
                     </section>
+                    <section className="service-section">
+                        {/*===============spacing==============*/}
+                        <div className="pd_top_90" />
+                        {/*===============spacing==============*/}
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col-xl-6 col-lg-6 mb-5 mb-lg-5 mb-xl-0">
+                                    <img src="/assets/images/about/about-14.jpg" alt="service1" />
+                                </div>
+                                <div className="col-xl-6 col-lg-6 pd_left_30">
+                                    <h1 className="mb-3">Full Stack Development</h1>
+                                    <div className="service-list mb-4">
+                                        <ul style={{listStyleType: "none"}}>
+                                            <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
+                                                <CheckCircle/>
+                                                <strong>Front-end</strong>
+                                            </li>
+                                            <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
+                                                <CheckCircle/>
+                                                <strong>Back-end</strong>
+                                            </li>
+                                            <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
+                                                <CheckCircle/>
+                                                <strong>Cloud Native</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {/*===============spacing==============*/}
+                            <div className="pd_bottom_90" />
+                            {/*===============spacing==============*/}
+                            <div className="row align-items-center">
+                                <div className="col-xl-6 col-lg-6 pd_left_30">
+                                    <h1 className="mb-3">Mobile App Development</h1>
+                                    <div className="service-list mb-4">
+                                        <ul style={{listStyleType: "none"}}>
+                                            <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
+                                                <CheckCircle/>
+                                                <strong>Cross Platform</strong>
+                                            </li>
+                                            <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
+                                                <CheckCircle/>
+                                                <strong>Native</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="col-xl-6 col-lg-6 mb-5 mb-lg-5 mb-xl-0">
+                                    <img src="/assets/images/about/about-14.jpg" alt="service1" />
+                                </div>
+                            </div>
+                        </div>
+                        {/*===============spacing==============*/}
+                        <div className="pd_bottom_90" />
+                        {/*===============spacing==============*/}
+                    </section>
+                    <section className="service-section-one">
+                    <div className="container">
+                        <div className="row">
+                            <div className="invisible_normal_spacing" />
+                            <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div className="service_box style_four dark_color">
+                                    <div className="service_content">
+                                        <div className="image_box">
+                                            <img src="/assets/images/projects/project-6-img.jpg" className="img-fluid" alt="Service Image" />
+                                            <span className="icon-video-player" />
+                                        </div>
+                                        <div className="content_inner">
+                                            <h2><Link href="#">Chat With a Live</Link ></h2>
+                                            <p>Live Chat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/*===============spacing==============*/}
+                                <div className="mr_bottom_30" />
+                                {/*===============spacing==============*/}
+                            </div>
+                            <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div className="service_box style_four dark_color">
+                                    <div className="service_content">
+                                        <div className="image_box">
+                                            <img src="/assets/images/about/about-12.jpg" className="img-fluid" alt="Service Image" />
+                                            <span className="icon-businessman-1" />
+                                        </div>
+                                        <div className="content_inner">
+                                            <h2><Link href="#">Ask Professionals</Link ></h2>
+                                            <p>our Team</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/*===============spacing==============*/}
+                                <div className="mr_bottom_30" />
+                                {/*===============spacing==============*/}
+                            </div>
+                            <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div className="service_box style_four dark_color">
+                                    <div className="service_content">
+                                        <div className="image_box">
+                                            <img src="/assets/images/blog/blog-image-10.jpg" className="img-fluid" alt="Service Image" />
+                                            <span className=" icon-development" />
+                                        </div>
+                                        <div className="content_inner">
+                                            <h2><Link href="#">Support to Grow</Link ></h2>
+                                            <p>User Guides</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/*===============spacing==============*/}
+                                <div className="mr_bottom_30" />
+                                {/*===============spacing==============*/}
+                            </div>
+                        </div>
+                    </div>
+                    {/*===============spacing==============*/}
+                    <div className="pd_bottom_60" />
+                    {/*===============spacing==============*/}
+                </section>
                 </div>
-
             </Layout>
         </>
     )

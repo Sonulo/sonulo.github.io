@@ -31,7 +31,7 @@ export default function Blog5() {
                                                 <div className="date">Full Stack Development</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >Full Stack Development</Link ></h2>
+                                                <h2 className="title"><Link href="#" >Full Stack Development</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
@@ -63,7 +63,7 @@ export default function Blog5() {
                                                 <div className="date">Mobile App Development</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >Mobile App Development</Link ></h2>
+                                                <h2 className="title"><Link href="#" >Mobile App Development</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
@@ -95,7 +95,7 @@ export default function Blog5() {
                                                 <div className="date">Machine Learning</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >Machine Learning</Link ></h2>
+                                                <h2 className="title"><Link href="#" >Machine Learning</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
@@ -142,7 +142,7 @@ export default function Blog5() {
                                                 <div className="date">AI Related Services</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >AI Related Services</Link ></h2>
+                                                <h2 className="title"><Link href="#" >AI Related Services</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
@@ -170,7 +170,7 @@ export default function Blog5() {
                                                 <div className="date">Data Analytics</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >Data Analytics</Link ></h2>
+                                                <h2 className="title"><Link href="#" >Data Analytics</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>
@@ -202,7 +202,7 @@ export default function Blog5() {
                                                 <div className="date">Web Hosting</div>
                                             </div>
                                             <div className="content_box ">                                             
-                                                <h2 className="title"><Link href="/blog-single" >Web Hosting</Link ></h2>
+                                                <h2 className="title"><Link href="#" >Web Hosting</Link ></h2>
                                                 <div className="service-list mb-4">
                                                 <ul style={{listStyleType: "none"}}>
                                                     <li style={{display: "flex", gap: "5px", alignItems: "center"}}>

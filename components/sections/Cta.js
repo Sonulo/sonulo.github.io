@@ -13,17 +13,14 @@ export default function Cta() {
                             <div className="col-lg-12">
                                 <div className="left_content">
                                     <div className="main_content">
-                                        <div className="video_box">
-                                            <VideoBox />
-                                        </div>
                                         <h6>Need Some Help?</h6>
-                                        <h1>Payroll Management</h1>
+                                        <h1>Software Development</h1>
                                         <p>Our power of choice is untrammelled and when nothing prevents our able to do what we
                                             like best every pleasure is to be welcomed and occur that pleasures have to be
                                             repudiated.</p>
                                         <div className="bottom_content">
                                             <div className="button_content">
-                                                <Link href="#" className="theme-btn three">
+                                                <Link href="/contact" className="theme-btn three">
                                                     Contact us<i className="icon-right-arrow-long" />
                                                 </Link >
                                             </div>
@@ -31,7 +28,7 @@ export default function Cta() {
                                                 <span className="icon-phone-call1 icon" />
                                                 <div className="content_bx">
                                                     <h2>Contact Us Soon</h2>
-                                                    <p>creote@support.com &amp; 16599349993</p>
+                                                    <p>info@sonulo.com</p>
                                                 </div>
                                             </div>
                                         </div>

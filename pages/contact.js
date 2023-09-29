@@ -1,10 +1,42 @@
 import Layout from "@/components/layout/Layout"
+import { useState } from "react"
+import emailjs from 'emailjs-com';
 import Link from "next/link"
+import Head from 'next/head'
 
 export default function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    const sendEmail = async (e) => {
+        try {
+            e.preventDefault();
+
+            const templateParams = {
+                to_email: "me@pethumjeewantha.com", // Replace with the recipient's email address
+                from_name: name,
+                email,
+                subject,
+                message,
+              };
+      
+            await emailjs.send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, templateParams, process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
+            alert("Mail Sent Successfully")
+            
+        } catch (error) {
+            console.error(error);
+            alert("Something went wrong")
+        }
+      };
+
     return (
         <>
-            <Layout breadcrumbTitle="Contact">
+            <Head>
+                <title>Sonulo - Contact</title>
+            </Head>
+            <Layout breadcrumbTitle="Contact" headerStyle={3} footerStyle={3}>
                 <div>
                     <section className="contact-section">
                         {/*===============spacing==============*/}
@@ -16,34 +48,34 @@ export default function Contact() {
                                     <div className="contact_form_box_all type_one">
                                         <div className="contact_form_box_inner">
                                             <div className="contact_form_shortcode">
-                                                <form id="contact-form">
+                                                <form id="contact-form" onSubmit={sendEmail}>
                                                     <div className="messages" />
                                                     <div className="controls">
                                                         <div className="row">
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Name<br /></label>
-                                                                    <input type="text" name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name" />
+                                                                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} name="name" placeholder="Your Name *" required="required" data-error="Enter Your Name" />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Email<br /></label>
-                                                                    <input type="text" name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id" />
+                                                                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} name="email" required="required" placeholder="Email *" data-error="Enter Your Email Id" />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Subject<br /></label>
-                                                                    <input type="text" name="subject" required="required" placeholder=" Subject  (Optional)" />
+                                                                    <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} name="subject" required="required" placeholder=" Subject  (Optional)" />
                                                                 </div>
                                                             </div>
                                                             <div className="col-sm-12">
                                                                 <div className="form-group">
                                                                     <label> Your Message<br /></label>
-                                                                    <textarea name="message" placeholder="Additional Information... (Optional) " rows={3} required="required" data-error="Please, leave us a message." defaultValue={""} />
+                                                                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" placeholder="Additional Information... (Optional) " rows={3} required="required" data-error="Please, leave us a message." defaultValue={""} />
                                                                     <div className="help-block with-errors" />
                                                                 </div>
                                                             </div>
@@ -76,7 +108,7 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> Post Address </h3>
                                                 <p>
-                                                    280 Granite Run Drive Suite #200 Lancaster, PA 1760
+                                                    302/A Hokandara South, Hokandara, Thalawathugoda, Colombo, LK 10118
                                                 </p>
                                             </div>
                                         </div>
@@ -92,7 +124,7 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> General Enquires </h3>
                                                 <p>
-                                                    Phone: +98 060 712 34 &amp; Email: sendmail@qetus.com
+                                                    Email: info@sonulo.com
                                                 </p>
                                             </div>
                                         </div>
@@ -108,37 +140,10 @@ export default function Contact() {
                                             <div className="contnet">
                                                 <h3> Operation Hours </h3>
                                                 <p>
-                                                    Mon-Satday: 09.00 to 07.00 (Sunday: Closed)
+                                                    Mon-Satday: 08.00 to 07.00 (Sunday: Closed)
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    {/*===============spacing==============*/}
-                                    <div className="pd_bottom_40" />
-                                    {/*===============spacing==============*/}
-                                    <div className="social_media_v_one style_two">
-                                        <ul>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-facebook" />
-                                                    <small>facebook</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-twitter" />
-                                                    <small>twitter</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-skype" />
-                                                    <small>skype</small>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="#"> <span className="fa fa-instagram" />
-                                                    <small>instagram</small>
-                                                </Link>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +159,7 @@ export default function Contact() {
                                     <section className="map-section">
                                         {/*Map Outer*/}
                                         <div className="map-outer">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.6895046810805!2d-122.52642526124438!3d38.00014098339506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085976736097a2f%3A0xbe014d20e6e22654!2sSan%20Rafael%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1678975266976!5m2!1svi!2s" height={570} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.81536310974!2d79.81500568842861!3d6.921836877840634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1695567886254!5m2!1sen!2slk" height={570} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                                         </div>
                                     </section>
                                 </div>
@@ -162,37 +167,6 @@ export default function Contact() {
                         </div>
                         {/*===============spacing==============*/}
                         <div className="pd_top_90" />
-                        {/*===============spacing==============*/}
-                    </section>
-                    {/*-newsteller-*/}
-                    <section className="newsteller style_one bg_dark_1">
-                        {/*===============spacing==============*/}
-                        <div className="pd_top_40" />
-                        {/*===============spacing==============*/}
-                        <div className="auto-container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-6 col-md-12">
-                                    <div className="content">
-                                        <h2>Join Our Mailing List</h2>
-                                        <p>For receiving our news and updates in your inbox directly. </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-12">
-                                    <div className="item_scubscribe">
-                                        <div className="input_group">
-                                            <form className="mc4wp-form" method="post" data-name="Subscibe">
-                                                <div className="mc4wp-form-fields">
-                                                    <input type="email" name="EMAIL" placeholder="Your email address" required />
-                                                    <input type="submit" defaultValue="Sign up" />
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/*===============spacing==============*/}
-                        <div className="pd_bottom_40" />
                         {/*===============spacing==============*/}
                     </section>
                 </div>

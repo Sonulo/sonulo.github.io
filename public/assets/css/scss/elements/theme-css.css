@@ -1334,7 +1334,7 @@
 :root {
   --creote-family-one: "Spartan", sans-serif!important;
   --creote-family-two: "Inter", sans-serif!important;
-  --primary-color-one: #078586;
+  --primary-color-one: #7935be;
   --primary-color-two: #282f3b;
   --primary-color-three: #f0f3f9;
   --color-white:#fff;
@@ -1366,6 +1366,10 @@
 
 .color_dark {
   color: var(--heading-dark) !important;
+}
+
+.color_primary{
+  color: var(--primary-color-one);
 }
 
 /*--================bg light colors ====================--*/
@@ -9577,7 +9581,7 @@ header .flaticon-list {
   border-radius: 5px;
   top: 10px;
   left: 10px;
-  background: var(--primary-color-one);
+  background: var(--primary-color-two);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;

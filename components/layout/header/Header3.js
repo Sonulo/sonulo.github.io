@@ -13,35 +13,14 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                         <div className="contntent address">
                                             <i className="icon-placeholder" />
                                             <div className="text">
-                                                <span>61W Business Str Hobert, LA </span>
+                                                <span>302/A Hokandara South, Hokandara, Thalawathugoda, Colombo, LK 10118</span>
                                             </div>
                                         </div>
                                         <div className="contntent email">
                                             <i className="icon-email" />
                                             <div className="text">
-                                                <Link href="mailto:sendmail@creote.com">sendmail@creote.com</Link>
+                                                <Link href="mailto:info@sonulo.com">info@sonulo.com</Link>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="right_side common_css">
-                                        <div className="contntent media">
-                                            <div className="text">
-                                                <Link href="#" >
-                                                    <i className="fa fa-facebook" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-twitter" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-skype" />
-                                                </Link>
-                                                <Link href="#" >
-                                                    <i className="fa fa-telegram" />
-                                                </Link>
-                                            </div>
-                                        </div>
-                                        <div className="contntent cbutton">
-                                            <Link href="#" className="theme-btn three"> Get In Touch </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -56,16 +35,9 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                 <div className="header_log_outer">
                                     <div className="header_logo_box">
                                         <Link href="/" className="logo navbar-brand">
-                                            <img src="assets/images/logo-white-1.png" alt="Creote Elementor" className="logo_default" />
-                                            <img src="assets/images/logo-default.png" alt="Creote Elementor" className="logo__sticky" />
+                                            <img src="assets/images/Sonulo/sonulo-logo2.png" alt="Creote Elementor" className="logo_default" />
+                                            <img src="assets/images/Sonulo/sonulo-logo2.png" alt="Creote Elementor" className="logo__sticky" />
                                         </Link>
-                                    </div>
-                                    <div className="phone_box">
-                                        <i className="icon-phone-call1" />
-                                        <div className="text">
-                                            <small>Phone</small>
-                                            <Link href="tel:+9806071234">+9806071234</Link>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -80,16 +52,6 @@ export default function Header3({ handleSearch, handleContactPopup, handleMobile
                                         <div className="navigation_menu">
                                             <Navbar />
                                         </div>
-                                    </div>
-                                    <div className="header_right_content">
-                                        <ul>
-                                            <li>
-                                                <button type="button" className="search-toggler" onClick={handleSearch}><i className="icon-search" /></button>
-                                            </li>
-                                            <li>
-                                                <button type="button" className="contact-toggler" onClick={handleContactPopup}><i className="icon-setup-dots" /></button>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>

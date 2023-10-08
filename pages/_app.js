@@ -25,6 +25,9 @@ function MyApp({ Component, pageProps }) {
         }, 1000)
 
     }, [])
+
+    window.location.protocol !== 'https:' && (window.location.protocol = 'https')
+
     return (
         <>
             <title>Sonulo - Software Development Company</title>

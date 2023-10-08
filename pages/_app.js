@@ -26,7 +26,10 @@ function MyApp({ Component, pageProps }) {
 
     }, [])
 
-    window.location.protocol !== 'https:' && (window.location.protocol = 'https')
+    // Check and update the protocol
+    if (typeof window !== 'undefined' && window.location.protocol !== 'https:') {
+        window.location.protocol = 'https';
+    }
 
     return (
         <>

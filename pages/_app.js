@@ -26,11 +26,6 @@ function MyApp({ Component, pageProps }) {
 
     }, [])
 
-    // Check and update the protocol
-    if (typeof window !== 'undefined' && window.location.protocol !== 'https:') {
-        window.location.protocol = 'https';
-    }
-
     return (
         <>
             <title>Sonulo - Software Development Company</title>

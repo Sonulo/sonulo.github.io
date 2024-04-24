@@ -4,8 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
-        "export": "next build && next export",
+        "build": "next build && next export",
         "start": "next start",
         "lint": "next lint",
         "sass": "sass --watch public/assets/css/scss/elements/theme-css.scss:public/assets/css/scss/elements/theme-css.css"

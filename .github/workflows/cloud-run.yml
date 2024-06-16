@@ -3,7 +3,7 @@ name: sonulo-official-web
 on:
   push:
     branches:
-      - cloud-deploy
+      - main
 
 jobs:
   build-and-push-gcr-image:

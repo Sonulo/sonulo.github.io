@@ -1,0 +1,65 @@
+name: sonulo-official-web
+
+on:
+  push:
+    branches:
+      - cloud-deploy
+
+jobs:
+  build-and-push-gcr-image:
+    name: Continuous Delivery
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Authenticate with Google Cloud
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}"
+
+      # Setup gcloud CLI/SDK
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker
+
+      - name: Build and tag the docker image
+        run: |-
+          docker build . --tag gcr.io/${{secrets.CLOUD_RUN_PROJECT_ID}}/${{secrets.REPO_NAME}}:$GITHUB_SHA
+
+      - name: Push the image to the Google Container Registry (GCR)
+        run: |-
+          docker push gcr.io/${{secrets.CLOUD_RUN_PROJECT_ID}}/${{secrets.REPO_NAME}}:$GITHUB_SHA
+
+  continuous-deployment:
+    name: Continuous Deployment
+    needs: build-and-push-gcr-image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Authenticate with Google Cloud
+      - id: "auth"
+        uses: "google-github-actions/auth@v1"
+        with:
+          credentials_json: "${{ secrets.CLOUD_RUN_SERVICE_ACCOUNT }}"
+
+      # Setup gcloud CLI/SDK
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+
+      - name: Deploy
+        run: |-
+          gcloud run deploy ${{secrets.CLOUD_RUN_PROJECT_ID}} \
+          --region ${{secrets.CLOUD_RUN_REGION}} \
+          --image gcr.io/${{secrets.CLOUD_RUN_PROJECT_ID}}/${{secrets.REPO_NAME}}:$GITHUB_SHA \
+          --platform "managed" \
+          --allow-unauthenticated \
+          --set-env-vars NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }},NEXT_PUBLIC_EMAILJS_SERVICE_ID=${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }},NEXT.NEXT_PUBLIC_EMAILJS_USER_ID=${{ secrets.NEXT_PUBLIC_EMAILJS_USER_ID }} \
+          --port 80 \
+          --quiet

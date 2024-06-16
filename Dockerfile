@@ -2,24 +2,22 @@ FROM node:alpine as BUILD_IMAGE
 WORKDIR /app
 COPY package.json ./
 
+# set environment variables
+RUN --mount=type=secret,id=NEXT_PUBLIC_EMAILJS_SERVICE_ID \
+    --mount=type=secret,id=NEXT_PUBLIC_EMAILJS_TEMPLATE_ID \
+    --mount=type=secret,id=NEXT_PUBLIC_EMAILJS_USER_ID\
+    export NEXT_PUBLIC_EMAILJS_SERVICE_ID=$(cat /run/secrets/NEXT_PUBLIC_EMAILJS_SERVICE_ID) &&\
+    export NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=$(cat /run/secrets/NEXT_PUBLIC_EMAILJS_TEMPLATE_ID) &&\
+    export NEXT_PUBLIC_EMAILJS_USER_ID=$(cat /run/secrets/NEXT_PUBLIC_EMAILJS_USER_ID)
+
 # install dependencies
-RUN npm install
+RUN npm install --verbose
 COPY . .
 
 # build
 RUN npm run build
 
-# remove dev dependencies
-RUN npm prune --production
-FROM node:alpine
-WORKDIR /app
-
-# copy from build image
-COPY --from=BUILD_IMAGE /app/package.json ./package.json
-COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
-COPY --from=BUILD_IMAGE /app/.next ./.next
-COPY --from=BUILD_IMAGE /app/public ./public
-
-EXPOSE 3000
+# expose the port
+EXPOSE 80
 
 CMD ["npm", "start"]
